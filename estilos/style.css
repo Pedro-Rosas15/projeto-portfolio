@@ -34,6 +34,9 @@ header{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 #menu ul{
@@ -158,10 +161,13 @@ article{
 
 #Titulos{
   display: flex;
+  justify-content: center;
 }
 .CFN{
-  width: 250px;
-  height: 350px;
+  width: 150px;
+  height: 250px;
+  
+  
 }
 .quant{
   background-color: var(--destaque);
@@ -192,12 +198,74 @@ article{
   height: 70px;}
 
 .tabela{
-  width: 570px;
+  background-color: #0077ff00;
+  background-image: url(../imagens/Tabela.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
   
 }
 
+.projetos{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--fundo-principal);
+  padding: 10px;
+  border-radius: 9px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: border-left .5s;
+}
+
+.projects:hover{
+  cursor: pointer;
+  border-left: 15px solid var(--destaque);
+}
+.fotopro{
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
+  main{
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  #ficha{
+    grid-column: 2/3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+
+  }
+
+  #detal{
+    grid-column: 4/5;
+  }
+
   .skill-container{
     grid-template-columns: 1fr 1fr;
+  }
+  .projects{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .infoproject{
+    max-width: 70%;
+
+  }
+
+  .fotopro{
+    aspect-ratio: 1/1;
+    max-width: 30%;
   }
 }
