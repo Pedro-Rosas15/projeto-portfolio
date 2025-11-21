@@ -3,29 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylepc.css">
-    <link rel="stylesheet" href="stylemedio.css">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/stylepc.css">
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+
+    <script src="https://kit.fontawesome.com/4b2383e261.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="menu">
-
+        <nav id="menu">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-brain"></i></a></li>
+                <li><a href="#"><i class="fa-sharp fa-regular fa-futbol"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-diagram-project"></i></i></a></li>
+                <li><a href="#"><i class="fa-sharp fa-regular fa-moon"></i></a></li>
+            </ul>
+        </nav>
     </header>
     
     <main>
-        <section>
+        <section id="ficha">
+            <img src="imagens/pedrorosas-perfil.png" alt="Pedro Rosas" class="foto">
 
+            <h1 class="nomepesoal">Pedro Rosas</h1>
+            <p>Um Menino de nascido em 2012 que gosta de jogar futebol, gosta de progarmar e está em fase de desenvolvimento na area da programação. No futebol, já jogou pelo <a href="https://www.instagram.com/natalsportingclub" target="_blank" class="links">Natal Sporting Clube(NSC)</a> e <a href="https://www.instagram.com/escolaflamengoaero" target="_blank" class="links">Flamengo Tirol Aero(FTA)</a> já conquistou muitas coisas e busca mais conquistas, sempre se aperfeiçoando</p>
+
+            <div id="social">
+                <a href="https://www.instagram.com/adm.rosas" target="_blank" class="redes"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@admrosas15?lang=pt-BR" target="_blank" class="redes"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
         </section>
-        <section>
+        <section id="detal">
+            <article id="skills">
+                <h2>Minhas habilidades</h2>
 
-        </section>
-        <section>
+                <div class="skill-container">
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-brands fa-html5"></i> HTML5
+                            </span>
 
-        </section>
-        <section>
+                            <span class="porcent">
+                                71%
+                            </span>
+                        </div>
+                        
+                        <div class="bar">
+                            <div class="progresso" style="width: 71%;"></div>
+                        </div>
+                    </div>
 
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                            <span class="porcent">
+                                64%
+                            </span>
+                        </div>
+                        
+                        <div class="bar">
+                            <div class="progresso" style="width: 64%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome"><i class="fa-brands fa-js"></i> Java Script</span>
+                            <span class="porcent">
+                                6%
+                            </span>
+
+                        </div>
+                        
+                        <div class="bar">
+                            <div class="progresso" style="width: 6%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+
+                            <span class="nome"><i class="fa-duotone fa-solid fa-futbol"></i> Futebol(Em relação na minha idade)</span>
+
+                            <span class="porcent">
+                                56%
+                            </span>
+                        </div>
+                        
+                        <div class="bar">
+                            <div class="progresso" style="width: 56%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome"><i class="fa-sharp fa-solid fa-person"></i> Liderança</span>
+                            <span class="porcent">
+                                64%
+                            </span>
+                        </div>
+                        
+                        <div class="bar">
+                            <div class="progresso" style="width: 64%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </article> <!--Fim do skills-->
+
+            <article id="futebol">
+                <h2>Futebol</h2>
+                <div class="fut-container">
+                    <div id="Titulos">
+                        <p>Titulos:</p> 
+                        <img src="imagens/CopaFla Nordeste.png" alt="Copa Fla Nordeste" title="Campeão da Fla Nordeste" class="CFN">
+                        <div class="quant"><i class="fa-sharp fa-solid fa-1"></i></div >
+                    </div>
+                    <div class="fut-item">
+                        <div class="compete">
+                            <h2>Estatiscas:</h2>
+
+                            <img src="imagens/Tabela.png" class="tabela" alt="">
+                            <div class="table">
+                                <div class="cel">ANO/TEMPORADA</div>
+                                <div class="cel">CAMPEONATO</div>
+                                <div class="cel">TIME</div>
+                                <div class="cel">Jogos</div>
+                                <div class="cel">GOLS</div>
+                                <div class="cel">ASSISTENCIAS</div>
+                                <div class="cel">AMARELOS</div>
+                                <div class="cel">VERMELHOS</div>
+                                <div class="cel">2024</div>
+                                <div class="cel">Amistosos</div>
+                                <div class="cel"><img src="imagens/marinha.png" id="imgmar"> <p>Marinha Futebol Clube</p></div>
+                                <div class="cel">5</div>
+                                <div class="cel">4</div>
+                                <div class="cel">1</div>
+                                <div class="cel">1</div>
+                                <div class="cel">0</div>
+                                <div class="cel">2025</div>
+                                <div class="cel">Amistosos</div>
+                                <div class="cel">
+                                    <img src="imagens/NSC.png" class="nsc"> <p>Natal Sporting Clube</p></div>
+                                <div class="cel">2</div>
+                                <div class="cel">2</div>
+                                <div class="cel">2</div>
+                                <div class="cel">1</div>
+                                <div class="cel">0</div>
+                                <div class="cel">2025</div>
+                                <div class="cel"><img src="imagens/potiguar.png" id="potiguar">
+                                Campeonato Potiguar de FUT7 - Sub 13</p></div>
+                                <div class="cel"><img src="imagens/NSC.png" class="nsc"> <p>Natal Sporting Clube</p></div>
+                                <div class="cel">8</div>
+                                <div class="cel">1</div>
+                                <div class="cel">0</div>
+                                <div class="cel">0</div>
+                                <div class="cel">0</div>
+                                <div class="cel">2025</div>
+                                <div class="cel"><img src="imagens/CopaFla Nordestelg.png" class="aero">Copa Fla Nordeste</div>
+                                <div class="cel"><img src="imagens/aero.jpg" class="aero"><p>Flamenego Aero Tirol</p></div>
+                                <div class="cel">5</div>
+                                <div class="cel">0</div>
+                                <div class="cel">1</div>
+                                <div class="cel">0</div>
+                                <div class="cel">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article> <!--Fim do futebol-->
+            <article id="projetos">
+                <h2>Projetos</h2>
+
+            </article> <!--Fim do projetos-->
         </section>
     </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
